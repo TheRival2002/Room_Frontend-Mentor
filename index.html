@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Frontend Mentor | Room homepage</title>
+
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="primary-header">
+    <div class="header-action | container">
+      <button class="mobile-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <a class="page-logo" href="#">
+        <img src="./images/logo.svg" alt="page logo">
+      </a>
+      <nav class="primary-nav" id="primary-nav">
+        <ul class="primary-nav__list">
+          <li><a href="#">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="carousel" aria-label="carousel">
+      <div class="slides" id="slides">
+        <div class="slide-item slide-item-1" aria-label="slide 1 of 3" tabindex="0" aria-current="true">
+          <picture>
+            <source srcset="./images/desktop-image-hero-1.jpg" media="(min-width: 50em)">
+            <img src="./images/mobile-image-hero-1.jpg" alt="slide image">
+          </picture>
+        </div>
+        <div class="slide-item slide-item-2" aria-label="slide 2 of 3" tabindex="0" aria-current="false">
+          <picture>
+            <source srcset="./images/desktop-image-hero-2.jpg" media="(min-width: 50em)">
+            <img src="./images/mobile-image-hero-2.jpg" alt="slide image">
+          </picture>
+        </div>
+        <div class="slide-item slide-item-3" aria-label="slide 3 of 3" tabindex="0" aria-current="false">
+          <picture>
+            <source srcset="./images/desktop-image-hero-3.jpg" media="(min-width: 50em)">
+            <img src="./images/mobile-image-hero-3.jpg" alt="slide image">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="carousel-toggle" aria-controls="slides">
+    <button class="prev-slide" aria-label="go to previous slide">
+      <img src="./images/icon-angle-left.svg" alt="">
+      <span class="sr-only">Slide to previous</span>
+    </button>
+    <button class="next-slide" aria-label="go to next slide">
+      <img src="./images/icon-angle-right.svg" alt="">
+      <span class="sr-only">Slide to next</span>
+    </button>
+  </div>
+
+  <section class="sub-header | container">
+    <h1 class="fs-heading-primary clr-neutral-900 fw-600">Discover inovative ways to decorate</h1>
+    <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form
+      and function in bringing your vision to life. Create a room in your own style with our collection and make your
+      property a reflection of you and what you love.</p>
+    <a href="#" class="shop-link">
+      shop now
+      <img src="./images/icon-arrow.svg" alt="">
+    </a>
+  </section>
+
+  <main>
+    <!-- First image -->
+    <section class="image-showoff">
+      <img src="./images/image-about-dark.jpg" alt="dark environment black chair">
+    </section>
+    <section class="page-desc | container">
+      <h3 class="fw-700 fs-400 clr-neutral-900">
+        about our furniture
+      </h3>
+      <p>Our multifunctional collection blends design and function to suit your individual taste. Make
+        each room unique,
+        or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you
+        need, from traditional to contemporary styles or anything in between. Product specialists are available to help
+        you create your dream space. </p>
+    </section>
+    <!-- Second image -->
+    <section class="image-showoff">
+      <img src="./images/image-about-light.jpg" alt="light environment white chair">
+    </section>
+  </main>
+
+</body>
+
+</html>
